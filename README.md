@@ -1,2 +1,2 @@
 # Globe
-Interactive Globe - MAS Thesis
+Interactive Globe - SUM Thesis
