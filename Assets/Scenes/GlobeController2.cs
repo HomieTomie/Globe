@@ -8,16 +8,16 @@ using UnityEngine;
 public class GlobeController2 : MonoBehaviour
 {
     [SerializeField]
-    private Transform targetObject; // Reference to the globe object
+    private Transform targetObject;
 
     [SerializeField]
-    private float rotationSpeed = 50f; // Rotation speed
+    private float rotationSpeed = 50f;
 
     [SerializeField]
     private float zoomSpeed = 1f;
     
     [SerializeField]
-    private TMPro.TextMeshProUGUI detectionText; // Text to display current pose (optional)
+    private TMPro.TextMeshProUGUI detectionText;
 
     private bool moveUp = false;
     private bool moveDown = false;
@@ -180,11 +180,11 @@ public class GlobeController2 : MonoBehaviour
     }
     private void RotateLeft()
     {
-        targetObject.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
+        targetObject.Rotate(Vector3.down * rotationSpeed * Time.deltaTime, Space.World);
     }
     private void RotateRight()
     {
-        targetObject.Rotate(Vector3.down * rotationSpeed * Time.deltaTime, Space.World);
+        targetObject.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
     }
     private void ZoomIn()
     {
