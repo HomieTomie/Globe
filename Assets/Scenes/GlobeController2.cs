@@ -171,20 +171,20 @@ public class GlobeController2 : MonoBehaviour
 
     private void RotateUpward()
     {
-        targetObject.Rotate(Vector3.left * rotationSpeed * Time.deltaTime, Space.World);
+        targetObject.Rotate(Vector3.right * rotationSpeed * Time.deltaTime, Space.World);
     }
 
     private void RotateDownward()
     {
-        targetObject.Rotate(Vector3.right * rotationSpeed * Time.deltaTime, Space.World);
+        targetObject.Rotate(Vector3.left * rotationSpeed * Time.deltaTime, Space.World);
     }
     private void RotateLeft()
     {
-        targetObject.Rotate(Vector3.down * rotationSpeed * Time.deltaTime, Space.World);
+        targetObject.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
     }
     private void RotateRight()
     {
-        targetObject.Rotate(Vector3.up * rotationSpeed * Time.deltaTime, Space.World);
+        targetObject.Rotate(Vector3.down * rotationSpeed * Time.deltaTime, Space.World);
     }
     private void ZoomIn()
     {
